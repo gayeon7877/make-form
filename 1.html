@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="Me llamo TACO-logo.png" alt="Me llamo TACO logo" id="logo" width=100% height=500>
+      <hr>
+      <form action="submission.html" method="POST">
+				<h1>Choose your TACO!</h1>
+        <section class="meat">
+          <label for="meat">What type of meat would you like?
+          <ul><li>beef</li>
+          <li>chicken</li>
+          <li>shrimp</li>
+          <li>pork</li></ul></label>
+    			<input type="text" name="meat" id="meat">
+        </section>
+        <hr>
+
+        <section class="amount">
+          <label for="amount">How much meat would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+
+        <section class="sauce">
+          <label for="sauce">How much sauce would you like?</label>
+          <br>
+
+          <input type="range" name="sauce" id="sauce" value="3" min="1" max="5">
+
+        </section>
+        <hr>
+
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <hr>
+
+        <section class="cilantro">
+          <span>Would you like to add cilantro?</span>
+          <br>
+          <input type="radio" name="cilantro" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cilantro" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <hr>
+
+        <section class="bun-type">
+          <label for="bun">What type of tortilla would you like?</label>
+          <select name="bun" id="bun">
+            <option value="corn">corn</option>
+            <option value="wheat">wheat</option>
+          </select>
+        </section>
+        <hr>
+
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="sourcream"></option>
+            <option value="sriracha"></option>
+            <option value="salsa"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
